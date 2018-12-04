@@ -21,7 +21,7 @@
             <span v-if="con.timeSinceLast">{{ con.timeSinceLast }}</span>
             <span v-else>-</span>
           </td>
-          <td>{{ con.startedAt | moment('HH:MM') }} - {{ con.finishedAt | moment('HH:MM') }}</td>
+          <td>{{ con.startedAt | moment('HH:mm') }} - {{ con.finishedAt | moment('HH:mm') }}</td>
           <td><button @click="remove(con.id, index)" >&#9747;</button></td>
         </tr>
       </tbody>
